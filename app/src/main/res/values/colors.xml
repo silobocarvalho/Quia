@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#FE7A0A</color>
+    <color name="colorAccent">#FEE60A</color>
+    <color name="colorOrangeBaseDark">#E84C02</color>
+
+
+
+    <color name="background_color">#E3F2FD</color> <!-- Light blue background -->
+    <color name="btn_blue">#2196F3</color> <!-- Vibrant blue button background -->
+    <color name="btn_text_color">#FFFFFF</color> <!-- White button text -->
+    <color name="autocomplete_background_color">#FFFFFF</color> <!-- White background for AutoCompleteTextView -->
+    <color name="hint_text_color">#000000</color> <!-- Deep blue hint text color -->
+    <color name="colorPrimary">#1976D2</color> <!-- Primary blue color -->
+    <color name="colorBase">#FFFFFF</color> <!-- Base color, typically white -->
+
+
+</resources>
+
+
