@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:background="@color/background_color_default">
 
 
     <ImageView
@@ -22,8 +22,10 @@
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="182dp"
-        android:layout_height="120dp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_enunciado"
+        android:layout_height="0dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="474dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_iniciar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,14 +49,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="156dp"
         android:gravity="center"
-        android:textStyle="bold"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:text="Pergunta lorem ipsum et man nain et nain ge"
         android:textAlignment="center"
-        android:textColor="#FEE60A"
+        android:textColor="@color/background_color_text"
         android:textSize="18sp"
-        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -64,12 +65,12 @@
         android:layout_width="329dp"
         android:layout_height="386dp"
         android:layout_margin="50dp"
-        android:background="@drawable/radio_group_orange_questions"
+        android:layout_marginTop="24dp"
+        android:background="@color/background_color_internal"
         android:paddingLeft="30dp"
         android:paddingTop="10dp"
         android:paddingRight="30dp"
         android:paddingBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_confirmar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_enunciado">
@@ -79,77 +80,57 @@
             android:id="@+id/rb_opcaoA"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:buttonTint="#7D5801"
             android:text="Opção A"
-            android:textColor="#7D5801"
+            android:textColor="@color/background_color_text"
             android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/rb_opcaoB"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:buttonTint="#7D5801"
             android:text="Opção B"
-            android:textColor="#7D5801"
+            android:textColor="@color/background_color_text"
             android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/rb_opcaoC"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:buttonTint="#7D5801"
             android:text="Opção C"
-            android:textColor="#7D5801"
-
+            android:textColor="@color/background_color_text"
             android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/rb_opcaoD"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:buttonTint="#7D5801"
             android:text="Opção D"
-            android:textColor="#7D5801"
-
+            android:textColor="@color/background_color_text"
             android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/rb_opcaoE"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:buttonTint="#7D5801"
             android:text="Opção E"
-            android:textColor="#7D5801"
-
+            android:textColor="@color/background_color_text"
             android:textSize="18sp" />
     </RadioGroup>
 
     <Button
         android:id="@+id/btn_confirmar"
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/btn_orange"
+        android:layout_width="239dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/button_background_color_black"
         android:text="@string/confirm"
-        android:textColor="@color/colorAccent"
-        android:textAllCaps="false"
-        android:textSize="18sp"
+        android:textColor="@color/btn_text_color"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.75" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="51dp"
-        android:layout_height="58dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.612"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/cloudone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

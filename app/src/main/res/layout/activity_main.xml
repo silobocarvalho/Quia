@@ -4,61 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/background_color_default"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="165dp"
-        android:layout_height="0dp"
+        android:layout_width="167dp"
+        android:layout_height="135dp"
         android:layout_marginTop="47dp"
         android:layout_marginBottom="33dp"
         app:layout_constraintBottom_toTopOf="@+id/tv_palavras_chave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.105"
         app:srcCompat="@drawable/cloud3png" />
 
     <Button
         android:id="@+id/btn_iniciar"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btn_orange"
-        android:shadowDx="0"
-        android:text="Iniciar"
-        android:textAllCaps="false"
+        android:layout_width="237dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="163dp"
+        android:backgroundTint="@color/button_background_color_black"
         android:textColor="@color/btn_text_color"
+        android:text="Iniciar"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.847" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_palavras_chave" />
 
     <AutoCompleteTextView
         android:id="@+id/tv_palavras_chave"
-        android:layout_width="335dp"
-        android:layout_height="91dp"
-        android:layout_marginBottom="298dp"
-        android:hint="Palavras chave"
+        android:layout_width="338dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="73dp"
         android:backgroundTint="@color/autocomplete_background_color"
-        android:textColorHint="@color/hint_text_color"
+        android:cursorVisible="true"
+        android:hint="Palavras chave separadas por espaço"
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColorHint="@color/hint_text_color"
+        app:layout_constraintBottom_toTopOf="@+id/btn_iniciar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <ProgressBar
         android:id="@+id/progress_bar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="201dp"
+        android:layout_height="263dp"
         android:visibility="gone"
+        android:indeterminateTint="@color/colorOrangeBaseDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

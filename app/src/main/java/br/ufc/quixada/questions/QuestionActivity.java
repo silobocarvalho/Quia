@@ -88,7 +88,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
             fillAlternatives(currentQuestion.getAlternativas().split(","));
         }else{
             Toast.makeText(this, "Parabens! Você concluiu o Quiz com sucesso!", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, CongratulationsActivity.class);
             startActivity(intent);
         }
     }

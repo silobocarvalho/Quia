@@ -15,6 +15,18 @@
     <color name="colorBase">#FFFFFF</color> <!-- Base color, typically white -->
 
 
+
+    <color name="button_background_color_black">#25330f</color> <!-- Replace with your desired color -->
+
+    <color name="background_color_default">#d4c9b4</color>
+    <color name="background_color_internal">#d8d7c3</color>
+    <color name="background_color_text">#7D5801</color>
+
+    <color name="congratulation_background_color">#a4b0af</color>
+
+
+
+
 </resources>
 
 
