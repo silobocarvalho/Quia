@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
@@ -20,6 +22,7 @@ import br.ufc.quixada.questions.requests.SimpleService;
 public class WrongAnswer extends AppCompatActivity {
 
     EditText et_justificativa_resposta;
+    Button btn_tentarNovamente;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +37,14 @@ public class WrongAnswer extends AppCompatActivity {
         String resposta = intent.getStringExtra("resposta");
 
         requestJustificativa(pergunta, resposta);
+
+        btn_tentarNovamente = findViewById(R.id.btn_tentar_novamente);
+        btn_tentarNovamente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getOnBackPressedDispatcher().onBackPressed();
+            }
+        });
 
     }
 

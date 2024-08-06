@@ -4,6 +4,10 @@
     <string name="confirm">Confirmar</string>
     <string name="scores">Pontuação</string>
     <string name="saved_questions">savedquestions</string>
+    <string name="tentarnovamente">Tentar Novamente</string>
+    <string name="estudarnovamente">Estudar Novamente</string>
+    <string name="parabens1">Parabéns!</string>
+    <string name="parabens2">Você completou o ciclo de estudo.</string>
 
 
 </resources>
