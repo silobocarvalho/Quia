@@ -51,8 +51,11 @@ public final class SimpleService {
             configBuilder.topP = 0.1f;
             GenerationConfig generationConfig = configBuilder.build();
 
+            //gemini-1.5-flash <-- esse novo modelo está funcionando melhor para geracao das questoes.
+            //gemini-pro <-- usado anteriormente, nao estava funcionando mto bem, gerando alternativas inválidas e somente 4 alternativas ao inves de 5
+            //TO DO - CREATE BLOCK TO CHANGE MODEL IF THE QUESTIONS ARE NOT GENERATED CORRECTLY
             GenerativeModel gm = new GenerativeModel(
-                    "gemini-pro",
+                    "gemini-1.5-flash",
                     apiKey,
                     generationConfig,
                     Collections.singletonList(harassmentSafety)
