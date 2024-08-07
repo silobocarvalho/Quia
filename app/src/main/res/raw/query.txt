@@ -1,0 +1,10 @@
+Crie um JSON com 5 perguntas objetivas sobre "key-palavra-chave" com o formato especifico:
+"[ {enunciado: Qual das seguintes tags HTML é usada para criar um título de nível 1?, resposta:<h1>, alternativas: <h1>,<h2>,<h3>,<h4>,<h5>} ]"
+AND o atributo "alternativas" do JSON retornado na sua resposta deve conter 5 opcoes
+AND somente uma alternativa deve ser a resposta_correta
+AND as alternativas devem ser separadas por virgula
+AND deve me devolver como resposta somente o JSON
+AND o atributo resposta que irá devolver no JSON deve conter a resposta_correta da pergunta E deve estar presente nas alternativas
+AND as alternativas devem ser claras e concisas, evitando ambiguidades
+AND a resposta correta deve ser consistente com o enunciado da questão
+AND o valor do atributo no retorno do JSON deve ser exatamente igual a um dos valores das alternativas

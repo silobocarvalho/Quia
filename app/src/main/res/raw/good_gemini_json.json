@@ -1,0 +1,27 @@
+[
+  {
+    "enunciado": "Qual método é usado para criar um novo item em um RecyclerView?",
+    "resposta": "notifyItemInserted",
+    "alternativas": "notifyItemInserted,notifyItemChanged,notifyItemRemoved,notifyDataSetChanged,notifyItemRangeInserted"
+  },
+  {
+    "enunciado": "Qual interface é implementada por um RecyclerView.Adapter?",
+    "resposta": "RecyclerView.Adapter",
+    "alternativas": "RecyclerView.Adapter,BaseAdapter,ListAdapter,CursorAdapter,ArrayAdapter"
+  },
+  {
+    "enunciado": "Qual método é usado para obter a posição de um item no RecyclerView?",
+    "resposta": "getAdapterPosition",
+    "alternativas": "getPosition,getAdapterPosition,getItemPosition,getLayoutPosition,getViewHolderPosition"
+  },
+  {
+    "enunciado": "Qual atributo é usado para definir o layout do RecyclerView?",
+    "resposta": "layoutManager",
+    "alternativas": "layoutManager,adapter,itemAnimator,itemDecoration,orientation"
+  },
+  {
+    "enunciado": "Qual método é usado para atualizar um item no RecyclerView?",
+    "resposta": "notifyItemChanged",
+    "alternativas": "notifyItemInserted,notifyItemChanged,notifyItemRemoved,notifyDataSetChanged,notifyItemRangeChanged"
+  }
+]
